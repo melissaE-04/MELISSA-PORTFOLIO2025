@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Melissa Eulálio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('img/Lírio Roxo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgb(255, 255, 255);
+            padding: 30px 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgb(71, 3, 86);
+            text-align: center;
+            width: 400px;
+        }
+
+        h3 {
+            font-size: 50px;
+            font-weight: bold;
+            color: rgb(193, 146, 237);
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        .linha {
+            width: 250px;
+            height: 4px;
+            background-color: purple;
+            margin: 0 auto 40px auto;
+            border-radius: 2px;
+        }
+
+        .input-group {
+            position: relative;
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .input-group input {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid purple;
+            background: transparent;
+            font-size: 20px;
+            padding: 14px 0 6px 0;
+            outline: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .input-group label {
+            position: absolute;
+            left: 0;
+            top: 14px;
+            color: gray;
+            font-size: 20px;
+            pointer-events: none;
+            transition: 0.2s ease all;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .input-group input:focus ~ label,
+        .input-group input:valid ~ label {
+            top: -12px;
+            font-size: 14px;
+            color: purple;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(193, 146, 237);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            padding: 15px 0;
+            width: 100%;
+            font-size: 25px;
+            margin-top: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: purple;
+        }
+
+        input:focus {
+         border-bottom: 2px solid rgb(193, 146, 237);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h3>Login</h3>
+        <div class="linha"></div>
+        <form>
+            <div class="input-group">
+                <input type="text" id="Login" name="Login" required>
+                <label for="Login">Usuário</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="Senha" name="Senha" required>
+                <label for="Senha">Senha</label>
+            </div>
+            <input type="submit" value="Entrar" onclick="logar(); return false;">
+        </form>
+    </div>
+
+    <script>
+        function logar() {
+            var login = document.getElementById("Login").value;
+            var senha = document.getElementById("Senha").value;
+            if (login == "admin" && senha == "admin") {
+                alert('Sucesso');
+                location.href = "INDEX.HTML";
+            } else {
+                alert("Usuário ou Senha incorretos");
+            }
+        }
+    </script>
+</body>
+</html>
