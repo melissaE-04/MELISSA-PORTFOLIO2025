@@ -238,27 +238,54 @@ nav ul li a:hover::after {
 
 .botoes-referencias {
     display: flex;
-    flex-wrap: nowrap; 
-    justify-content: flex-start; 
-    gap: 10px; 
+    flex-wrap: nowrap;
+    justify-content: center;  
+    align-items: center;
+    gap: 20px;
     overflow-x: auto; 
-    padding: 10px 0; 
+    padding: 20px;
 }
 
 .botoes-referencias img {
-    width: 100px;  
-    height: 100px; 
+    width: 80px;
+    height: 80px;
     object-fit: contain;
+    border: none;
     border-radius: 0;
-    padding: 0;
-    background-color: transparent;
+    background: transparent;
     box-shadow: none;
     transition: transform 0.3s ease;
+    margin: 0; 
+    padding: 0;
 }
 
 .botoes-referencias img:hover {
     transform: scale(1.1);
 }
 
+.botoes-referencias {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 30px; 
+  padding: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.botoes-referencias img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.852);
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.botoes-referencias img:hover {
+  transform: scale(1.1);
+}
 
 

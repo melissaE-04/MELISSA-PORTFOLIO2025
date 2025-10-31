@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 250px;
+    font-size: 180px;
 }
 
 img {
@@ -24,7 +24,6 @@ hr {
     background-color: white;
     margin: 25px 0;
     width: 99vw; 
-    margin-top: 40px;
 }
 
 .elevado {

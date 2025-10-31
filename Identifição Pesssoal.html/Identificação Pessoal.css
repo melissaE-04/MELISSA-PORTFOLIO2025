@@ -1,9 +1,9 @@
 body {
-    position:relative
-    color: rgb(37, 5, 88);
-    background-color: rgb(192, 143, 238);
-    font-family: 'Times New Roman', Times, serif;
-    text-align:center;
+    position:relative;
+    color:rgb(37, 5, 88);
+    background-color:rgb(192, 143, 238);
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 h1 {
@@ -68,6 +68,7 @@ img {
     height: 500px;
     width: 400px;
 }
+
 
 hr {
     border-color: rgb(249, 249, 249);
